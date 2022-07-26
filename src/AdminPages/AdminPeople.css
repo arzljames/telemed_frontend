@@ -1,0 +1,132 @@
+.dr-name {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.dr-name img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #eee;
+  border: 2px solid #d3d3d3;
+  margin-right: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#link {
+  font-weight: 500;
+  color: rgb(45, 109, 206);
+}
+
+#link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.dr-patient {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.dr-hospital {
+  width: 400px;
+}
+
+.dr-status {
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.admin-user-no {
+  width: 35px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-user-hospital {
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  flex: 0.75;
+}
+
+.admin-user-spec {
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  flex: 0.5;
+}
+
+.admin-user-patients {
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.5;
+}
+
+.admin-user-name {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.admin-user-name img {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  background: #eee;
+  border: 1px solid #d3d3d3;
+  margin-right: 10px;
+}
+
+.table-body .admin-user-name p,
+.table-body-2 .admin-user-name p {
+  cursor: pointer;
+  color: rgb(45, 109, 206);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.table-body .admin-user-name p:hover,
+.table-body-2 .admin-user-name p:hover {
+  text-decoration: underline;
+}
+
+.us-status {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-body .us-status.online,
+.table-body-2 .us-status.online {
+  color: #499c69;
+}
+
+.us-status p {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.us-status p.offline {
+  background: #ffcb6a;
+}
+
+.us-status p.online {
+  background: #4dd965;
+}

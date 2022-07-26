@@ -1,0 +1,185 @@
+.case-header {
+  display: flex;
+  align-items: flex-end;
+  color: #272727;
+  margin: 20px 0px;
+  justify-content: space-between;
+}
+
+.case-header-container {
+  display: flex;
+}
+
+.case-header h5 {
+  font-weight: 600;
+  margin-right: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.case-header p {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.case-header button {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.1s ease-in-out;
+  color: #fff;
+  background: #058e46;
+  outline: none;
+  border: none;
+}
+
+.case-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+  position: relative;
+  min-height: 500px;
+}
+
+.case-body div.no-active-cases {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.case-body div.no-active-cases h1 {
+  font-size: 22px;
+  color: #272727;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.case-body div.no-active-cases p {
+  font-size: 13px;
+  color: #808080;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#today-case {
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+.case-content {
+  width: 100%;
+  height: 100px;
+  min-height: 100px;
+  background: rgb(255, 255, 255);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  margin-bottom: 8px;
+  margin-left: 0px;
+  display: flex;
+  padding: 10px 20px;
+  position: relative;
+  align-items: center;
+  font-size: 40px;
+  border: 1px solid #d3d3d3;
+}
+
+.case-content-avatar {
+  width: 55px;
+  height: 55px;
+  background: rgb(205, 255, 231);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.case-content.case-content-disable {
+  width: 100%;
+  height: 80px;
+  background: rgb(243, 243, 243);
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  flex-direction: column;
+  position: relative;
+}
+
+.case-content h1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #272727;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.case-content p {
+  font-size: 12px;
+  color: #808080;
+  width: 100%;
+}
+
+.case-content div.case-content-date {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: auto;
+  display: flex;
+  white-space: nowrap;
+}
+
+.case-content div.case-content-date p {
+  font-weight: 500;
+  font-size: 11px;
+  color: #808080;
+  margin-left: 10px;
+}
+
+.case-content:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.2s ease-in-out;
+  background: #fff;
+  transform: translateX(-10px);
+}
+
+.above-case {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .case-content div.case-content-date {
+    display: none;
+  }
+}

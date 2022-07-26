@@ -1,0 +1,151 @@
+.admin-subheading button.add-fac-btn p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  color: #fff;
+  margin-top: 0px;
+}
+
+.admin-subheading button.add-fac-btn:hover {
+  background: #057a3c;
+  color: #fff;
+  transition: 0.1s ease-in-out;
+}
+
+.above-table-right button.fac-btns {
+  color: #808080;
+  background: transparent;
+}
+
+.above-table-right button.fac-btns p {
+  color: #057a3c;
+}
+
+.above-table-right button p {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.fac-no {
+  width: 35px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.fac-doctors,
+.fac-spec {
+  width: 12.5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.fac-name {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.fac-body-name .img-container p {
+  color: #06753a;
+  font-size: 14px;
+}
+
+.fac-body-name .img-container {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #eee;
+  border: 2px solid #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 30px;
+  min-width: 30px;
+}
+
+.fac-body-name .img-container img {
+  width: 100%;
+}
+
+.fac-add {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+.fac-body-no {
+  width: 35px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fac-body-action p {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #d3d3d300;
+}
+
+.fac-body-action p:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: rgb(233, 233, 233);
+  border: 1px solid #d3d3d3;
+}
+
+.fac-body-doctors,
+.fac-body-spec {
+  width: 12.5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fac-body-name {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.fac-body-name span {
+  cursor: pointer;
+  color: rgb(45, 109, 206);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.fac-body-name span:hover {
+  text-decoration: underline;
+}
+
+.fac-body-add {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}

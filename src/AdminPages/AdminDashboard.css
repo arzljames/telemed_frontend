@@ -1,0 +1,242 @@
+.content-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.container-divider {
+  display: flex;
+  max-height: 500px;
+}
+
+.admin-container-content {
+  width: 100%;
+  padding-right: 20px;
+}
+
+.statistic-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.chart-container {
+  background: #fff;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  min-height: 200px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 75%;
+}
+
+.donut-chart-container {
+  min-width: 200px;
+  background: #fff;
+  width: 25%;
+  margin-left: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 15px;
+  min-width: 0;
+}
+
+.year-selected {
+  display: flex;
+  align-items: center;
+}
+
+.year-selected h2 {
+  font-weight: 600;
+  margin-right: 10px;
+  color: #272727;
+  font-size: 16px;
+}
+
+.year-selected select {
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #d3d3d3;
+  padding: 4px;
+}
+
+.calendar-container {
+  width: 100%;
+  background: #69c591;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+  color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.calendar-container:hover {
+  transition: 0.2s ease-in-out;
+  background: #56a779;
+  cursor: pointer;
+  color: #fff;
+}
+
+.calendar-container .date {
+  text-align: center;
+}
+
+.calendar-container .date h2 {
+  font-weight: 300;
+  font-size: 15px;
+
+  margin-bottom: 4px;
+}
+
+.calendar-container .date h3 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.admin-right-panel {
+  width: 25%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0px;
+  padding: 0px;
+}
+
+.pending-registration {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  margin: 0px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  min-height: 500px;
+}
+
+.pending-registration h2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #272727;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.recently-added-body,
+.pending-registration-body {
+  width: 100%;
+  height: 80%;
+}
+
+.pending-registration-header h1,
+.recently-added-header h1 {
+  font-size: 16px;
+  color: #272727;
+  font-weight: 600;
+}
+
+.pending-registration-header p,
+.recently-added p {
+  font-size: 12px;
+  color: rgb(47, 113, 255);
+  cursor: pointer;
+  font-style: italic;
+}
+
+.pending-registration-header p:hover,
+.recently-added-header p:hover {
+  text-decoration: underline;
+}
+
+.recently-added {
+  width: 100%;
+  height: 50%;
+  max-height: 300px;
+  height: 300px;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.no-pending-user {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.no-pending-user p {
+  font-size: 14px;
+  color: #808080;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-divider {
+    flex-direction: column;
+  }
+
+  .chart-container {
+    width: 100%;
+    margin-bottom: 20px;
+    min-width: none;
+  }
+
+  .donut-chart-container {
+    width: 100%;
+    margin-left: 0px;
+    min-height: 500px;
+    /* min-width: none; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .admin-right-panel {
+    display: none;
+  }
+
+  .admin-container-content {
+    width: 100%;
+  }
+
+  .content-divider {
+    flex-direction: column;
+  }
+
+  .statistic-section {
+    flex-direction: column;
+  }
+
+  .admin-subheading h2 {
+    font-size: 16px;
+  }
+
+  .admin-subheading p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .admin-container-content {
+    padding: 0px;
+  }
+
+  .container-divider {
+    padding: 0px;
+  }
+
+  .content-body {
+    padding: 20px 10px;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+}

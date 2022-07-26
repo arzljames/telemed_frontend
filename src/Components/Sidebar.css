@@ -1,0 +1,60 @@
+.sidebar {
+  width: 70px;
+  height: 100%;
+  background: #111727;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.sidebar-badge {
+  width: 9px;
+  height: 9px;
+  background: rgb(241, 55, 55);
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border-radius: 50%;
+}
+.notif-badge {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: rgb(255, 39, 39);
+  border-radius: 50%;
+  top: 10px;
+  right: 18px;
+  color: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.icon-container,
+.icon-container-active {
+  position: relative;
+}
+
+.icon-container .notif-badge,
+.icon-container-active .notif-badge {
+  color: #fff;
+}
+
+.icon-container .icon,
+.icon-container-active .icon {
+  font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+
+
+
+  
+}

@@ -1,0 +1,136 @@
+.cs-id {
+  width: 175px;
+  height: 100%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cs-name {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+
+.cs-info-container {
+  width: 100%;
+  display: flex;
+  font-size: 12px;
+  flex-direction: column;
+  margin-top: 5px;
+  text-transform: none;
+}
+
+.table-body .cs-name p,
+.table-body .cs-id p,
+.table-body-2 .cs-name p,
+.table-body-2 .cs-id p {
+  cursor: pointer;
+  color: rgb(45, 109, 206);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.table-body .cs-name p:hover,
+.table-body .cs-id p:hover,
+.table-body-2 .cs-name p:hover,
+.table-body-2 .cs-id p:hover {
+  text-decoration: underline;
+}
+
+.cs-department,
+.cs-date {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cs-status {
+  width: 150px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs-status p.done {
+  color: #2794d3;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  background: #d3e6f1;
+  border-radius: 100px;
+  height: 30px;
+  border: 1px solid #2794d3;
+}
+
+.cs-status p.active {
+  color: #058e46;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  background: #dbffec;
+  justify-content: center;
+  border-radius: 100px;
+  width: 70px;
+  height: 30px;
+  border: 1px solid #058e46;
+}
+
+.cs-status p.pending {
+  color: #808080;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  background: #eee;
+  justify-content: center;
+  border-radius: 100px;
+  width: 90px;
+  height: 30px;
+  border: 1px solid #808080;
+}
+
+.cs-status .indicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.cs-status .indicator.done {
+  background: #2794d3;
+}
+
+.cs-status .indicator.active {
+  background: #058e46;
+}
+
+.cs-status .indicator.pending {
+  background: #808080;
+}
+
+@media screen and (max-width: 768px) {
+  .cs-department,
+  .cs-date,
+  .cs-status {
+    display: none;
+  }
+
+  .cs-id {
+    width: 50%;
+  }
+
+  .cs-name {
+    width: 50%;
+  }
+}
